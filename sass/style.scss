@@ -1,0 +1,12 @@
+@import "abstract/constant";
+@import "abstract/mixin";
+@import "abstract/placeholder";
+
+//base
+@import "base/base";
+
+//layout
+@import "layout/wrapper";
+
+//component
+@import "component/demo.scss";
