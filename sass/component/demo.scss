@@ -1,0 +1,63 @@
+
+.demo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.6rem 4rem;
+    background-color: #EBF0FA;
+    border-radius: 10px;
+}
+
+.demo__content {
+    padding-left: 7.2rem;
+
+}
+
+.demo__text {
+    max-width: 53.8rem;
+    margin-top: 3.8rem;
+}
+
+.demo__btn {
+    display: block;
+    color: #FFFFFF;
+    padding: 1.2rem;
+    background-color: #244C98;
+    border-radius: 60px;
+    border: 1px solid #244C98;
+    margin-top: 4.3rem;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-wrapper > p {
+    @include font($size: 1.8rem, $weight: 500, $height: 2.88rem);
+margin: 0;
+margin-left: 24px;
+padding: 0;
+}
+
+.btn-wrapper > div {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    margin-left: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo__img {
+    height: 45.6rem;
+    width: 91rem;
+    background-image: url(../assets/img/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+}
