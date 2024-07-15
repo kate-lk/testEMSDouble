@@ -1,17 +1,33 @@
 html {
-    font-size: 10px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  @extend %font-prim;
+  @include font($size: 1.7rem, $height: 2.72rem);
+
+  @include media-tablet {
+    @include font($size: 1.5rem, $height: 2.4rem);
   }
-  
-  body {
-    max-width: 1920px;
-    margin: 0 auto;
-    @extend %font-prim;
+
+  @include media-mobile {
+    @include font($size: 1.3rem, $height: 2.08rem);
+  }
+}
+
+h1 {
+  @include font($size: 3rem, $weight: 500, $height: 4.8rem);
+  color: #1F4284;
+
+  @include media-tablet {
+    @include font($size: 2rem, $height: 3.2rem);
+  }
+
+  @include media-mobile {
     @include font($size: 1.7rem, $height: 2.72rem);
   }
-  
-  h1 {
-    @include font($size: 3rem, $weight: 500, $height: 4.8rem);
-    color: #1F4284;
-  }
+}
