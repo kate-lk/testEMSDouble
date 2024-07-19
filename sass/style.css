@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Manrope", Verdana, sans-serif;
 }
@@ -222,6 +223,134 @@ h1 {
     height: 60%;
     bottom: -60%;
   }
+}
+
+.modal-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.modal {
+  position: absolute;
+  width: 50rem;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: #F0F4FC;
+  padding: 2.4rem;
+}
+
+.modal-close-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.modal__close {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.form__input {
+  width: 90%;
+  padding: 2rem;
+  background-color: #D7E2F6;
+  color: #1F4284;
+  border-radius: 10px;
+  border: 1px solid #D7E2F6;
+  margin: 0.4rem 0;
+}
+.form__input::placeholder {
+  color: #244C98;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.72rem;
+}
+
+.passave-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form__restore {
+  color: #244C98;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.72rem;
+  cursor: pointer;
+}
+
+.modal-btn {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.72rem;
+  border: 1px solid #244C98;
+  cursor: pointer;
+  margin: 0.4rem 0;
+}
+.modal-btn_in {
+  background-color: #244C98;
+  color: #FFFFFF;
+}
+.modal-btn_up {
+  background-color: #D7E2F6;
+  color: #244C98;
+}
+
+label {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  height: 1.4rem;
+  width: 1.4rem;
+  border: 1px solid #244C98;
+  display: inline-block;
+  border-radius: 2px;
+  position: relative;
+}
+
+[type=checkbox]:checked + span::before {
+  content: "✔";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  color: #1F4284;
 }
 
 /*# sourceMappingURL=style.css.map */
